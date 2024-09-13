@@ -1,0 +1,77 @@
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/src/assets/heo.jpg') center/cover no-repeat; /* Fixed typo in the image path */
+  color: white;
+  text-align: center;
+  padding: 0 1rem; /* Added padding for smaller screens */
+  box-sizing: border-box; /* Ensures padding is included in the height */
+}
+
+/* Content Container */
+.content {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+}
+
+/* Title Styling */
+.title {
+  font-size: 4rem; /* Adjust size for larger screens */
+  margin-bottom: 1rem;
+}
+
+/* Subtitle Styling */
+.subtitle {
+  font-size: 2rem; /* Adjust size for larger screens */
+  font-weight: 300;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3.5rem; /* Adjust size for medium screens */
+  }
+
+  .subtitle {
+    font-size: 1.75rem; /* Adjust size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 3rem; /* Adjust size for tablets */
+  }
+
+  .subtitle {
+    font-size: 1.5rem; /* Adjust size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; /* Adjust size for mobile screens */
+  }
+
+  .subtitle {
+    font-size: 1.25rem; /* Adjust size for mobile screens */
+  }
+
+  .hero-section {
+    height: auto; /* Allows section to grow based on content */
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; /* Adjust size for very small screens */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Adjust size for very small screens */
+  }
+}

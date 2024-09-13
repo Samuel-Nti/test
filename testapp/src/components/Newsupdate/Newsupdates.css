@@ -1,0 +1,230 @@
+/* News Updates Section */
+.news-updates-section {
+  padding: 20px; /* Adjusted padding for smaller screens */
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+}
+
+/* News Item */
+.news-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row */
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.news-image {
+  width: 150px; /* Fixed width for uniformity */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensure image covers area without distortion */
+  border-radius: 8px;
+  margin-right: 15px; /* Space between image and text */
+}
+
+.news-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-title {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.news-date {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.news-description {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.see-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.see-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-height: 70vh;
+  overflow: hidden;
+}
+
+.modal-photo {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Restrict photo height in modal */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.modal-text {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.modal-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.modal-date {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.modal-details {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .news-item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+  }
+
+  .news-image {
+    width: 120px; /* Adjust size for tablets */
+    height: 160px;
+  }
+
+  .see-more-btn {
+    padding: 8px 16px;
+    font-size: 0.85em;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .modal-photo {
+    max-height: 180px; /* Adjust photo height for tablets */
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  .news-item {
+    flex: 1 1 100%; /* 1 item per row */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news-image {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+
+  .news-title {
+    font-size: 1.1em;
+  }
+
+  .news-date, .news-description {
+    font-size: 0.9em;
+  }
+
+  .see-more-btn {
+    padding: 8px 14px;
+    font-size: 0.8em;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-width: 90%;
+  }
+
+  .modal-photo {
+    max-height: 150px; /* Adjust photo height for mobile */
+  }
+}
+
+/* Extra small screens (very mobile) */
+@media (max-width: 480px) {
+  .news-title {
+    font-size: 1em; /* Adjust size for very small screens */
+  }
+
+  .news-date, .news-description {
+    font-size: 0.8em; /* Adjust size for very small screens */
+  }
+
+  .see-more-btn {
+    padding: 6px 12px;
+    font-size: 0.7em;
+  }
+
+  .modal-photo {
+    max-height: 120px; /* Adjust photo height for very small screens */
+  }
+}

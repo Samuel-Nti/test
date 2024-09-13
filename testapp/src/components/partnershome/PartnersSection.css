@@ -1,0 +1,123 @@
+/* Partners Section */
+.partners-section {
+    text-align: center;
+    padding: 1rem; /* Adjusted padding for better spacing */
+    background-color: #ffffff;
+  }
+  
+  /* Partners Title */
+  .partners-title {
+    font-size: 2rem; /* Adjusted size for larger screens */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Partners Subtitle */
+  .partners-subtitle {
+    font-size: 1.25rem; /* Adjusted size for larger screens */
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* Partners Logos */
+  .partners-logos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Partner Logo */
+  .partner-logo {
+    max-width: 80px; /* Increased size for better visibility */
+    max-height: 80px;
+    object-fit: contain;
+    border-radius: 7px; /* Rounded corners */
+    transition: transform 0.3s ease;
+  }
+  
+  /* About Us Button */
+  .about-us-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff0000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 auto; /* Center the button */
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-us-button:hover {
+    background-color: #fc0202;
+  }
+  
+  /* Media Queries */
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 992px) {
+    .partners-title {
+      font-size: 1.75rem; /* Adjust size for tablets */
+    }
+  
+    .partners-subtitle {
+      font-size: 1.1rem; /* Adjust size for tablets */
+    }
+  
+    .partner-logo {
+      max-width: 60px; /* Adjust size for tablets */
+      max-height: 60px;
+    }
+  
+    .about-us-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Small screens (mobile) */
+  @media (max-width: 768px) {
+    .partners-title {
+      font-size: 1.5rem; /* Adjust size for mobile screens */
+    }
+  
+    .partners-subtitle {
+      font-size: 1rem; /* Adjust size for mobile screens */
+    }
+  
+    .partner-logo {
+      max-width: 50px; /* Adjust size for mobile screens */
+      max-height: 50px;
+    }
+  
+    .about-us-button {
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      margin: 0 1rem; /* Adjust margin for mobile screens */
+    }
+  }
+  
+  /* Extra small screens (very mobile) */
+  @media (max-width: 480px) {
+    .partners-title {
+      font-size: 1.25rem; /* Adjust size for very small screens */
+    }
+  
+    .partners-subtitle {
+      font-size: 0.9rem; /* Adjust size for very small screens */
+    }
+  
+    .partner-logo {
+      max-width: 40px; /* Adjust size for very small screens */
+      max-height: 40px;
+    }
+  
+    .about-us-button {
+      padding: 6px 12px;
+      font-size: 0.75rem;
+      margin: 0 0.5rem; /* Adjust margin for very small screens */
+    }
+  }
+  
